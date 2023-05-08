@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * check_cycle - it is a  function that checks for if a single linked list has a cycle
+ * check_cycle -  function that checks whether cycle is present is list
  *
  * @list1: linked list to be checked
  *
@@ -19,7 +19,7 @@ int check_cycle(listint_t *list1)
 		return (0);
 
 	while (slow && fast && fast->next)
-i	{
+	{
 		slow = slow->next;
 		fast = fast->next->next;
 		if (slow == fast)
