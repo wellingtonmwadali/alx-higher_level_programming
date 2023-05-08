@@ -5,13 +5,13 @@
 
 /**
  * struct listint_s - A singly linked list
- * @i: Integer in script
- * @pos:  pointer to the next node
+ * @n: Integer in script
+ * @next:  pointer to the next node
  */
 typedef struct listint_s
 {
-	int i;
-	struct listint_s *pos;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
