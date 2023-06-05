@@ -116,6 +116,8 @@ Using the getattr Function
 The getattr function is a built-in Python function used to retrieve the value of an attribute from an object dynamically.
 It takes the object and attribute name as parameters and returns the value if the attribute exists.
 
-Contributing
+Contributing  
+
+
 Contributions are welcome! If you find any issues or have suggestions for improvement,
 please feel free to open an issue or create a pull request.
