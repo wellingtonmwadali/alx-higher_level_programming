@@ -1,4 +1,4 @@
-# Python Objects and Concepts
+# Python Objects and Concepts.
 
 
 This readme provides an overview of fundamental concepts in Python programming, focusing on objects and related concepts.
