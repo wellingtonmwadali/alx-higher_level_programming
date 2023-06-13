@@ -3,5 +3,8 @@
 
 
 def class_to_json(obj):
-    """function that returns dictionary description of a simple data structure."""
+    """
+    function that returns
+    dictionary description of a simple data structure.
+    """
     return obj.__dict__
