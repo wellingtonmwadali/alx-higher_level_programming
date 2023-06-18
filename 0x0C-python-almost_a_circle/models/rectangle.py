@@ -92,3 +92,51 @@ class Rectangle(Base):
                 [print("", end="") for x in range(self.x)]
                 [print("#", end="") for w in range(self.width)]
                 print("")
+
+    def update(self, *args, **kwargs):
+        """Update the Rectangle by
+        overiding the ___str___ method.
+
+        Args:
+            *args (ints): New attribute values.
+                - 1st argument = id attribute
+                - 2nd argument = width
+                - 3rd argument = height
+                - 4th argument = x
+                - 5th argument = y
+            **kwargs (dict): New value pairs of attributes.
+        """
+        if args and len(args) != 0:
+            b = 0
+            for arg in args:
+                if b == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif b == 1:
+                    self.width = arg
+                elif b == 2:
+                    self.height = arg
+                elif b == 3:
+                    self.x = arg
+                elif b == 4:
+                    self.y = arg
+                b += 1
+
+        elif kwargs and len(kwargs) != 0:
+            for j, v in kwargs.items():
+                if j == "id":
+                    if v is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = v
+                elif j == "width":
+                    self.width = v
+                elif j == "height":
+                    self.height = v
+                elif j == "x":
+                    self.x = v
+                elif j == "y":
+                    self.y = v
+
