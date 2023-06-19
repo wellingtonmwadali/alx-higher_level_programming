@@ -1,5 +1,3 @@
-###This module needs revision
-
 #!/usr/bin/python3
 """unittests for models/rectangle.py
 in order.
@@ -507,7 +505,6 @@ class TestRectangle_stdout(unittest.TestCase):
         with self.assertRaises(TypeError):
             r.__str__(1)
 
-    #display method
     def test_display_width_height(self):
         r = Rectangle(2, 3, 0, 0, 0)
         capture = TestRectangle_stdout.capture_stdout(r, "display")
@@ -539,7 +536,6 @@ class TestRectangle_stdout(unittest.TestCase):
 class TestRectangle_update_args(unittest.TestCase):
     """testing update args method of the Rectangle class."""
 
-    #args
     def test_update_args_zero(self):
         r = Rectangle(10, 10, 10, 10, 10)
         r.update()
@@ -804,6 +800,7 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         r = Rectangle(10, 2, 4, 1, 2)
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
+
 
 if __name__ == "__main__":
     unittest.main()
