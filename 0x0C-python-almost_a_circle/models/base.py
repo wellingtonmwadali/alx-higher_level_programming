@@ -2,7 +2,7 @@
 """This defines a base model class."""
 import json
 import csv
-import turtle
+
 
 
 class Base:
@@ -28,8 +28,8 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-            @staticmethod
-    def to_json_string(list_dictionaries):
+    @staticmethod
+    def to_json_striing(list_dictionaries):
         """ JSON serialization of a list of dicts.
 
         Args:
