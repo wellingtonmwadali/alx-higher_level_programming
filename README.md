@@ -1,6 +1,6 @@
- This a folder containing all python programs .
 Welcome to ALX sprint two.
+PYTHON || SQL
 
 Happy Coding
-feel free to leave a star
+Leave a star if you find it useful
 
