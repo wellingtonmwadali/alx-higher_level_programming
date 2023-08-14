@@ -5,7 +5,7 @@ if (isNaN(square)) {
 } else {
   for (let k = 0; k < square; k++) {
     let row = '';
-    for (let h = 0; h < size; h++) row += 'X';
+    for (let h = 0; h < square; h++) row += 'X';
     console.log(row);
   }
 }
