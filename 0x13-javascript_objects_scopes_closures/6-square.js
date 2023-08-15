@@ -1,19 +1,10 @@
 #!/usr/bin/node
-const SquareSix = require('./5-square');
-
-class Square extends SquareSix {
-  charPrint (c) {
-    if (c === undefined) {
-      c = 'X';
-    }
-    for (let k = 0; k < this.height; k++) {
-      let h = '';
-      for (let m = 0; m < this.width; m++) {
-        h += c;
-      }
-      console.log(h);
+exports.nbOccurences = function (list, searchElement) {
+  let nOccurrences = 0;
+  for (let k = 0; k < list.length; k++) {
+    if (searchElement === list[k]) {
+      nOccurrences++;
     }
   }
-}
-
-module.exports = Square;
+  return nOccurrences;
+};
